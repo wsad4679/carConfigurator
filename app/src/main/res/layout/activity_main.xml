@@ -24,6 +24,7 @@
                 />
 
                 <RadioGroup
+                    android:id="@+id/car_type_radiogorup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -31,13 +32,16 @@
                     >
 
                     <RadioButton
+                        android:id="@+id/sedan_radiobutton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sedan"
                         android:layout_marginBottom="10dp"
+                        android:checked="true"
                         />
 
                     <RadioButton
+                        android:id="@+id/suv_radiobutton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="SUV"
@@ -45,6 +49,7 @@
                         />
 
                     <RadioButton
+                        android:id="@+id/hatchback_radiobutton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hatchback"
@@ -56,6 +61,7 @@
                 </RadioGroup>
 
         <ImageView
+            android:id="@+id/car_imageview"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
@@ -63,28 +69,38 @@
 
 
         <CheckBox
+            android:id="@+id/cool_seats_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Chłodzone fotele"
+            android:layout_gravity="center"
             />
 
         <CheckBox
+            android:id="@+id/leather_seats_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Skórzane fotele"
+            android:layout_gravity="center"
+
             />
 
 
         <Button
+            android:id="@+id/order_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Zamów"
+            android:layout_gravity="center"
             />
 
         <TextView
+            android:id="@+id/order_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Podsumowanie zamówienia: "
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
             />
 
     </LinearLayout>
